@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+    font-size: 30px;
+    color: rgb(32, 122, 195);
+    margin-bottom: 0px;
+    margin-top: 100px;
+    text-align:center;
+  }
+
+  /* .nav-item{
+      color: rgb(0, 0, 0);
+  } */
