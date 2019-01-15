@@ -10,6 +10,20 @@ export class NavigationBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
+  }
+  goToTop() {
+    scrollTo(0,0);
+  }
+  goToWork() {
+    let el= document.getElementById('work-experience');
+    el.scrollIntoView();
+  }
+  goToEducation() {
+    
+    let el= document.getElementById('education');
+    el.scrollIntoView();
+    // ('button').toggleClass()
   }
 
 }

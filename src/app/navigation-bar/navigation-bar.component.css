@@ -1,0 +1,10 @@
+.navbar-main a {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.navbar-sub a {
+    font-family: monospace;
+    font-size: 15px;
+    float: left;
+}
