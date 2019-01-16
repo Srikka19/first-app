@@ -1,10 +1,27 @@
-.navbar-main a {
-    font-family: monospace;
-    font-size: 15px;
+
+ul .active, 
+.container{
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-sub a {
-    font-family: monospace;
-    font-size: 15px;
+.navbar {
     float: left;
-}
+    position: fixed;
+    top:0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .navbar a {
+    display: inline;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 17px;
+  }
+  
+ .navbar a:hover {
+    background-color: rgb(32, 122, 195);
+    color: white;
+    text-decoration: none;
+  }

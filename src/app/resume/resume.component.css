@@ -13,9 +13,8 @@ h1 {
   body{
     display: inline-block
   }
+ 
+  /* #work-experience {
+    background-color: rgb(230, 230, 230);
+  } */
 
-  .navbar-sub a {
-    font-family: monospace;
-    font-size: 15px;
-    float: left;
-}

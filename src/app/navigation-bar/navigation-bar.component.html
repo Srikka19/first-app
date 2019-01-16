@@ -1,14 +1,29 @@
-<nav class="navbar-main navbar-fixed-top navbar-dark bg-inverse">
+<nav class="navbar">
     <div class="container">
-        <ul class="nav navbar-nav" routerLinkActive="active">
-            <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="about-me">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="resume" (click)="goToTop()">My Resume</a></li>
-            <li class="nav-item button"><a class="nav-link" routerLink="resume" (click)="goToWork()">Work experience</a></li>
-            <li class="nav-item button" ><a class="nav-link" routerLink="resume" (click)="goToEducation()">Education</a></li>
+        <ul routerLinkActive="active">
+            <a routerLink="home">Home</a>
+            <a routerLink="about-me">About Me</a>
+            <a routerLink="resume" (click)="goToTop()">My Resume</a>
+            <a routerLink="resume" (click)="goToWork()">Work experience</a>
+            <a routerLink="resume" (click)="goToEducation()">Education</a>
         </ul>
     </div>
 </nav>
+
+<!-- <div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div> -->
+
+<!-- <nav class="nav-bar">
+    <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    </ul>
+</nav> -->
 
 
 
