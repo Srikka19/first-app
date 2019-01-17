@@ -11,7 +11,7 @@ h1 {
     font-weight: lighter;
   }
   body {
-    padding: 3em;
+    margin: 3em;
   }
   body, input[type="text"], button {
     color: #888;
@@ -20,6 +20,5 @@ h1 {
   /* everywhere else */
   * {
     font-family: monospace;
-    color: #369;
 
   }

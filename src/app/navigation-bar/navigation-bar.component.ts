@@ -17,7 +17,7 @@ export class NavigationBarComponent implements OnInit {
   }
   goToWork() {
     let el= document.getElementById('work-experience');
-    el.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   goToEducation() {
     
