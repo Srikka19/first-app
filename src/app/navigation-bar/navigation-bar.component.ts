@@ -17,12 +17,12 @@ export class NavigationBarComponent implements OnInit {
   }
   goToWork() {
     let el= document.getElementById('work-experience');
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    el.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }
   goToEducation() {
     
     let el= document.getElementById('education');
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    el.scrollIntoView({ behavior: 'smooth', block: 'end' });
     // ('button').toggleClass()
   }
 

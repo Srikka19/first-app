@@ -1,20 +1,27 @@
 h1 {
-    font-size: 30px;
-    color: rgb(32, 122, 195);
-    margin-bottom: 0px;
-    margin-top: 100px;
-    text-align:center;
-  }
+  font-size: 30px;
+  font-family: monospace;
+  color: rgb(32, 122, 195);
+  padding-top: 40px;
+  padding-bottom: 25px;
+  text-align:center;
+}
 
-  hr{
-    border-top: 1px solid rgb(32, 122, 195);
-  }
+h2 {
+  font-size: 20px;
+  color: rgb(32, 122, 195);
+  margin-bottom: 0px;
+  margin-top: 10px;
+  text-align:left;
+}
+hr{
+  border-top: 1px solid rgb(32, 122, 195);
+}
 
-  body{
-    display: inline-block
-  }
+body{
+  padding: 3em
+}
  
   /* #work-experience {
     background-color: rgb(230, 230, 230);
   } */
-
