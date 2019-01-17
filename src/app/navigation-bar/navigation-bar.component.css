@@ -8,16 +8,22 @@ ul .active,
 .navbar {
     float: left;
     position: fixed;
-    top:0;
-    width: 100%;
-    margin-top: 20px;
+    top: 0;
+    /* width: 100%; */
+    margin-top: 5px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:blanchedalmond;  
   }
   
   .navbar a {
     display: inline;
     text-align: center;
+    color: #369;
     padding: 10px 10px;
     font-size: 17px;
+    text-decoration: none;
   }
   
  .navbar a:hover {
