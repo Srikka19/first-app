@@ -1,8 +1,25 @@
 h1 {
     font-size: 30px;
+    font-family: monospace;
     color: rgb(32, 122, 195);
     margin-bottom: 0px;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 100px;
     text-align:left;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(32, 122, 195);
+    margin-bottom: 0px;
+    margin-top: 150px;
+    margin-left: 100px;
+    text-align:left;
+  }
+
+  @media screen and (max-width: 601px) {
+    h1 {
+      margin-top: 200px;
+    }
   }

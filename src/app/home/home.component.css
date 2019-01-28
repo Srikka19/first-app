@@ -1,5 +1,5 @@
 title {
-  font-size: 30px;
+  font-size: 30vw;
   font-family: monospace; 
   color: rgb(32, 122, 195);
   text-align:center;
@@ -65,3 +65,10 @@ title {
   border-radius: 3px;
 }
 
+
+
+@media screen and (max-width: 601px) {
+  .name {
+    margin-top: 0;
+  }
+}

@@ -23,3 +23,11 @@ body, input[type="text"], button {
   color: #369;
 
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+window.scrollTo{
+  behavior: 'smooth'
+};
