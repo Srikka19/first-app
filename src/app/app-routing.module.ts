@@ -5,18 +5,18 @@ import {AboutMeComponent} from './about-me/about-me.component';
 import {ResumeComponent} from './resume/resume.component';
 
 const appRoutes: Routes = [
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'about-me',
-    component: AboutMeComponent
-  },
-  {
-    path: 'resume',
-    component: ResumeComponent
-  },
+  // {
+  //   path: 'home',
+  //   component: HomeComponent
+  // },
+  // {
+  //   path: 'about-me',
+  //   component: AboutMeComponent
+  // },
+  // {
+  //   path: 'resume',
+  //   component: ResumeComponent
+  // },
   {
     path: '',
     redirectTo: '/home',

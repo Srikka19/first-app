@@ -3,12 +3,17 @@
 ul .active, 
 .container{
     margin: 0;
-    /* padding: 0; */
+    align-self: left;
 }
 
 body {
   position: relative;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: cal(100vh - 14em);
 }
 .navbar {
     float: left;
@@ -36,7 +41,10 @@ body {
     text-decoration: none;
   }
   
-  
+  .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+    font-family: monospace;
+}
  .navbar a:hover {
     background-color: rgb(32, 122, 195);
     color: white;
@@ -50,3 +58,9 @@ body {
   #home {height:-webkit-fill-available;color: #fff; background-color: white;}
   #about-me {height:-webkit-fill-available;color: #fff; background-color: white;}
   #resume {height:-webkit-fill-available;color: #fff;}
+
+/* @media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    padding-left: 300px;
+  }
+} */
