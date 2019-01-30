@@ -1,125 +1,57 @@
-.main-timeline:after{
-  content: '';
-  display: block;
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
   clear: both;
 }
-.main-timeline .timeline{
-  font-family: 'PT Sans', sans-serif;
-  background-color: #fff;
-  width: 57.8%;
-  float: left;
-  position: relative;
-  z-index: 1;
-}
-.main-timeline .timeline-content{
-  color: #000;
-  text-align: right;
-  min-height: 160px;
-  padding: 20px 210px 20px 40px;
-  display: block;
-  position: relative;
-}
-.main-timeline .timeline-content:hover{ text-decoration: none; }
-.main-timeline .timeline-icon{
-  color: #EE2D48;
-  font-size: 45px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.main-timeline .title{
-  color: #EE2D48;
-  font-size: 22px;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin: 0 0 10px;
-}
-.main-timeline .description{
-  color: #101010;
-  font-size: 15px;
-  letter-spacing: 1px;
-  margin: 0;
-}
-.main-timeline .timeline-year{
-  color: #fff;
-  background: linear-gradient(145deg,#D12138 49%,#EE2D48 50%);
-  font-size: 60px;
-  font-weight: 600;
-  text-align: center;
-  text-shadow: 2px 2px 5px #000;
-  line-height: 130px;
-  height: 130px;
-  width: 180px;
-  border-radius: 10px;
-  transform: translateY(-50%);
-  position: absolute;
-  right: 0;
-  top: 50%;
-}
-.main-timeline .timeline:nth-child(even){ float: right; }
-.main-timeline .timeline:nth-child(even) .timeline-content{
+
+h2{
+  color: black;
   text-align: left;
-  padding: 20px 40px 20px 210px;
+  margin-left: 40px;
 }
-.main-timeline .timeline:nth-child(even) .timeline-year{
-  right: auto;
-  left: 0;
+
+h1{
+  margin-bottom: 40px;
+  text-align:left;
+  margin-left: 33px;
 }
-.main-timeline .timeline:nth-child(even) .timeline-icon{
-  left: auto;
-  right: 0;
+
+h3{
+  color:black;
+  margin-left: 40px;
 }
-.main-timeline .timeline:nth-child(4n+2) .timeline-year{
-  background: linear-gradient(145deg,#5E7582 49%, #87A9B3 50%);
+.carousel-control.left {
+  background-image: linear-gradient(to right,rgba(255, 255, 255, 0.5) 0,rgba(255, 255, 255, 0) 100%);
 }
-.main-timeline .timeline:nth-child(4n+2) .timeline-icon,
-.main-timeline .timeline:nth-child(4n+2) .title{
-  color: #87A9B3;
+
+.carousel-control.right {
+  background-image: linear-gradient(to right,rgba(255, 255, 255, 0.5) 0,rgba(255, 255, 255, 0) 100%);
 }
-.main-timeline .timeline:nth-child(4n+3) .timeline-year{
-  background: linear-gradient(145deg,#CC872A 49%, #FBA22A 50%);
+
+.glyphicon-chevron-left{
+  color: #369;
+  margin-left: -121px;
 }
-.main-timeline .timeline:nth-child(4n+3) .timeline-icon,
-.main-timeline .timeline:nth-child(4n+3) .title{
-  color: #FBA22A;
+
+.glyphicon-chevron-right{
+  color: #369;
+  margin-right: -121px;
 }
-.main-timeline .timeline:nth-child(4n+4) .timeline-year{
-  background: linear-gradient(145deg,#2BAA99 49%, #60C6B9 50%);
-}
-.main-timeline .timeline:nth-child(4n+4) .timeline-icon,
-.main-timeline .timeline:nth-child(4n+4) .title{
-  color: #60C6B9;
-}
-@media screen and (max-width:1200px){
-  .main-timeline .timeline{ width: 59.6%; }
-}
-@media screen and (max-width:990px){
-  .main-timeline .timeline{ width: 62.5%; }
-}
-@media screen and (max-width:767px){
-  .main-timeline .timeline{
-      width: 100%;
-      margin-bottom: 30px;
-  }
-  .main-timeline .timeline-content,
-  .main-timeline .timeline:nth-child(even) .timeline-content{
-      text-align: center;
-      padding: 70px 10px 10px;
-  }
-  .main-timeline .timeline-icon,
-  .main-timeline .timeline:nth-child(even) .timeline-icon{
-      left: auto;
-      right: 0;
-      top: -7px;
-  }
-  .main-timeline .timeline-year{
-      font-size: 40px;
-      line-height: 50px;
-      height: 50px;
-      width: 150px;
-      transform: translateY(0);
-      top: 0;
-      right: auto;
-      left: 0;
-  }
+
+.carousel-indicators li {
+  background-color: #369;
 }
