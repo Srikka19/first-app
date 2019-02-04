@@ -8,7 +8,7 @@
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 400px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -22,6 +22,7 @@ h2{
   color: black;
   text-align: left;
   margin-left: 40px;
+  text-emphasis: bold;
 }
 
 h1{
@@ -34,12 +35,18 @@ h3{
   color:black;
   margin-left: 40px;
 }
+
+h4{
+  font-size: 15px;
+  color: black;
+  margin-left: 33px;
+}
 .carousel-control.left {
-  background-image: linear-gradient(to right,rgba(255, 255, 255, 0.5) 0,rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 0,rgba(255, 255, 255, 0) 100%);
 }
 
 .carousel-control.right {
-  background-image: linear-gradient(to right,rgba(255, 255, 255, 0.5) 0,rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 0,rgba(255, 255, 255, 0) 100%);
 }
 
 .glyphicon-chevron-left{
@@ -54,4 +61,8 @@ h3{
 
 .carousel-indicators li {
   background-color: #369;
+}
+
+.carousel {
+  margin-top: 100px;
 }

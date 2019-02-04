@@ -11,9 +11,10 @@ h1 {
     font-family: monospace;
     color: rgb(32, 122, 195);
     margin-bottom: 0px;
-    margin-top: 150px;
     margin-left: 100px;
+    margin-top: 230px;
     text-align:left;
+    width: 1250px;
   }
 
   @media screen and (max-width: 601px) {
@@ -21,3 +22,22 @@ h1 {
       margin-top: 200px;
     }
   }
+
+
+  /* div {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+  }
+   */
+  .img {
+    float: right;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 200px;
+    border-block-end-color: blue;
+  }
+  
+  .clearfix {
+    overflow: auto;
+  }
+  

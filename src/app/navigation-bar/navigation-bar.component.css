@@ -55,9 +55,9 @@ section {
     scroll-behavior: smooth;
   }
 
-  #home {height:-webkit-fill-available;color: #fff; background-color: white;}
+  #home {height:-webkit-fill-available;color: #fff; background-color: rgb(238, 238, 238);}
   #about-me {height:-webkit-fill-available;color: #fff; background-color: white;}
-  #resume {height:-webkit-fill-available;color: #fff;}
+  #resume {height:-webkit-fill-available;background-color: rgb(238, 238, 238);}
 
 /* @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
