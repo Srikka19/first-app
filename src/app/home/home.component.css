@@ -1,6 +1,7 @@
 title {
   font-size: 30vw;
-  font-family: monospace; 
+  /* font-family: monospace;  */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(32, 122, 195);
   text-align:center;
   align-items: center;
@@ -17,7 +18,8 @@ title {
 }
 .name {
     font-size: 30px;
-    font-family: monospace; 
+    /* font-family: monospace;  */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(32, 122, 195);
     text-align:center;
     align-items: center;
@@ -33,7 +35,8 @@ title {
     border-radius: 3px;
   }
 .description {
-  font-family: monospace; 
+  /* font-family: monospace;  */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   color: rgb(32, 122, 195);
   text-align:center;

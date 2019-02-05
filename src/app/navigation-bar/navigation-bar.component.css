@@ -43,7 +43,8 @@ section {
   
   .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: white;
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
  .navbar a:hover {
     background-color: rgb(32, 122, 195);
@@ -57,10 +58,16 @@ section {
 
   #home {height:-webkit-fill-available;color: #fff; background-color: rgb(238, 238, 238);}
   #about-me {height:-webkit-fill-available;color: #fff; background-color: white;}
-  #resume {height:-webkit-fill-available;background-color: rgb(238, 238, 238);}
+  #resume {height:-webkit-fill-available;background-color: white }
 
 /* @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     padding-left: 300px;
   }
 } */
+
+@media screen and (max-width: 601px) {
+ #about-me{
+    height: fit-content;
+  }
+}
