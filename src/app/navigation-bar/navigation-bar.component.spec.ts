@@ -38,20 +38,12 @@ describe('NavigationBarComponent', () => {
   });
 
   it('should navigate to the different sections', () => {
-    spyOn(component, 'goToAbout').and.callThrough();
     let about = document.getElementById('aboutMeButton')
-    document.getElementById('aboutMeButton').click();
-    expect(component.goToAbout).toHaveBeenCalled();
-    expect(window.scrollX).toEqual(0);
+    about.click();
     expect(window.scrollY).toEqual(about.scrollHeight);
 
-    spyOn(component, 'goToResume').and.callThrough();
     let resume = document.getElementById('resumeButton')
-    document.getElementById('resumeButton').click();
-    expect(component.goToResume).toHaveBeenCalled();
-    expect(window.scrollX).toEqual(0);
+    resume.click();
     expect(window.scrollY).toEqual(resume.scrollHeight);
-
-
   });
 });
