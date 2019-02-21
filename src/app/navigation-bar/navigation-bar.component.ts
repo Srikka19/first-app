@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { element } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -6,18 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation-bar.component.css']
 })
 export class NavigationBarComponent implements OnInit {
-  navbarOpen = false;
-  private toggle : boolean = false;
+  aboutMeButton = document.getElementById('aboutMeButton');
+  
 
   constructor() { }
 
   ngOnInit() {
     
   }
-  goToTop() {
-    window.scrollTo(0,0);
-
-  }
+  // goToTop() {
+  //   window.scrollTo(0,0);
+  // }
   goToResume() {
     let el= document.getElementById('resume');
     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -26,16 +26,6 @@ export class NavigationBarComponent implements OnInit {
     let el= document.getElementById('about-me');
     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     window.scrollTo(0,el.scrollHeight);
-  }
-
-  toggleNavbar() {
-    this.navbarOpen = !this.navbarOpen;
-  }
-
-  show:boolean = false;
-
-  toggleCollapse() {
-    this.show = !this.show
   }
 }
 
