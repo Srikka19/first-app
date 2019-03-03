@@ -1,43 +1,44 @@
-<nav class="navbar-main navbar-fixed-top navbar-dark bg-inverse">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#">Srikka Subramaniam</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
     <div class="container">
-        <ul class="nav navbar-nav" routerLinkActive="active">
-            <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="about-me">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="resume" (click)="goToTop()">My Resume</a></li>
-            <li class="nav-item button"><a class="nav-link" routerLink="resume" (click)="goToWork()">Work experience</a></li>
-            <li class="nav-item button" ><a class="nav-link" routerLink="resume" (click)="goToEducation()">Education</a></li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <!-- <li class="nav-item">
+                <a class="nav-link active" (click)="goToTop()" >Home</a>
+              </li> -->
+          <li class="nav-item">
+        <a id="aboutMeButton" class="nav-link active" (click)="goToAbout()" routerlink="/about-me"> About me</a>
+          </li>
+          <li class="nav-item">
+            <a id="resumeButton" class="nav-link active"  (click)="goToResume()">Resume</a>
+          </li>
         </ul>
+      </div>
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link active" href="/assets/doc/Srikka-Subramaniam-CV.pdf" download="SrikkaCV" target="_blank">Download my CV</a>
+            </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
+  <router-outlet></router-outlet>
 
+  <section id=home class="container-fluid">
+      <app-home></app-home>
+  </section>
+  <section id=about-me class="container-fluid">
+      <app-about-me></app-about-me>
+  </section>
 
-
-<router-outlet></router-outlet>
-<!-- <section id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <app-home></app-home>
-            </div>
-          </div>
-        </div>
-</section>
-<section id="about-me">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <app-about-me></app-about-me>
-            </div>
-          </div>
-        </div>
-</section>
-<section id="about-me">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <app-resume></app-resume>
-            </div>
-          </div>
-        </div>
-</section> -->
-  
+    <section id=resume class="container-fluid" >
+        <app-resume></app-resume>
+      </section>
+</body>

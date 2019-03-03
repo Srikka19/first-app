@@ -1,21 +1,94 @@
-h1 {
-    font-size: 30px;
-    color: rgb(32, 122, 195);
-    margin-bottom: 0px;
-    margin-top: 100px;
-    text-align:center;
-  }
 
-  hr{
-    border-top: 1px solid rgb(32, 122, 195);
-  }
+* {
+  box-sizing: border-box;
+}
 
-  body{
-    display: inline-block
-  }
+li {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: -10px;
+}
 
-  .navbar-sub a {
-    font-family: monospace;
-    font-size: 15px;
-    float: left;
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2{
+  color: black;
+  text-align: left;
+  margin-left: 10px;
+  text-emphasis: bold;
+}
+
+h1{
+  margin-bottom: 40px;
+  text-align:left;
+  margin-left: 10px;
+}
+
+h3{
+  color: rgb(32, 122, 195);
+  margin-left: 10px;
+}
+
+h4{
+  font-size: 15px;
+  color: black;
+  /* margin-left: 33px; */
+}
+.carousel-control.left {
+  background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 0,rgba(255, 255, 255, 0) 100%);
+  margin-bottom: -500px;
+  margin-left: 50px;
+}
+
+.carousel-control.right {
+  background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 0,rgba(255, 255, 255, 0) 100%);
+  margin-bottom: -500px;
+  margin-right: 150px;
+}
+
+.glyphicon-chevron-left{
+  color: #369;
+}
+
+.glyphicon-chevron-right{
+  color: #369;
+}
+
+.carousel-indicators li {
+  background-color: #369;
+}
+
+.carousel {
+  margin-top: 100px;
+  right:20px;
+}
+
+@media (min-width: 1200px){
+  .container {
+    max-width: 1200px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .column {
+    width:90%;
+    height: 300px;
+  }
+  .carousel-control.left, .carousel-control.right{
+    margin-bottom: -900px;
+  }
 }

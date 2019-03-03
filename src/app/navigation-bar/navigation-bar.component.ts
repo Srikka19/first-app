@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { element } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -6,24 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation-bar.component.css']
 })
 export class NavigationBarComponent implements OnInit {
+  aboutMeButton = document.getElementById('aboutMeButton');
+  
 
   constructor() { }
 
   ngOnInit() {
     
   }
-  goToTop() {
-    scrollTo(0,0);
+  // goToTop() {
+  //   window.scrollTo(0,0);
+  // }
+  goToResume() {
+    let el= document.getElementById('resume');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-  goToWork() {
-    let el= document.getElementById('work-experience');
-    el.scrollIntoView();
+  goToAbout() {
+    let el= document.getElementById('about-me');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    window.scrollTo(0,el.scrollHeight);
   }
-  goToEducation() {
-    
-    let el= document.getElementById('education');
-    el.scrollIntoView();
-    // ('button').toggleClass()
-  }
-
 }
+

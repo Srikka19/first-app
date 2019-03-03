@@ -1,6 +1,7 @@
 title {
-  font-size: 30px;
-  font-family: monospace; 
+  font-size: 30vw;
+  /* font-family: monospace;  */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(32, 122, 195);
   text-align:center;
   align-items: center;
@@ -17,15 +18,16 @@ title {
 }
 .name {
     font-size: 30px;
-    font-family: monospace; 
+    /* font-family: monospace;  */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(32, 122, 195);
     text-align:center;
     align-items: center;
     display: flex;
     justify-content: center;
     position: absolute;
-    margin: auto;
-    top: 0;
+    margin: 100px;
+    top: 250px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -33,7 +35,8 @@ title {
     border-radius: 3px;
   }
 .description {
-  font-family: monospace; 
+  /* font-family: monospace;  */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   color: rgb(32, 122, 195);
   text-align:center;
@@ -41,12 +44,12 @@ title {
   display: flex;
   justify-content: center;
   position: absolute;
-  margin: auto;
-  top: 150px;
+  /* margin: auto; */
+  top: 15px;
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100px;
+  height: 870px;
   border-radius: 3px;
 }
 
@@ -65,3 +68,10 @@ title {
   border-radius: 3px;
 }
 
+
+
+@media screen and (max-width: 601px) {
+  .name {
+    margin-top: 0;
+  }
+}
