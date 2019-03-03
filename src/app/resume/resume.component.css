@@ -49,15 +49,18 @@ h4{
 }
 .carousel-control.left {
   background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 0,rgba(255, 255, 255, 0) 100%);
+  margin-bottom: -500px;
+  margin-left: 50px;
 }
 
 .carousel-control.right {
   background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 0,rgba(255, 255, 255, 0) 100%);
+  margin-bottom: -500px;
+  margin-right: 150px;
 }
 
 .glyphicon-chevron-left{
-  color: black;
-  margin-left: -80px;
+  color: #369;
 }
 
 .glyphicon-chevron-right{
@@ -70,18 +73,22 @@ h4{
 
 .carousel {
   margin-top: 100px;
+  right:20px;
 }
 
-/* @media (min-width: 1200px){
+@media (min-width: 1200px){
   .container {
     max-width: 1200px;
     margin-left: 100px;
   }
-} */
+}
 
 @media screen and (max-width: 601px) {
   .column {
     width:90%;
-    height: 250px;
+    height: 300px;
+  }
+  .carousel-control.left, .carousel-control.right{
+    margin-bottom: -900px;
   }
 }

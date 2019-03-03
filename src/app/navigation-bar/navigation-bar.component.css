@@ -27,6 +27,7 @@ section {
     padding-bottom: 14px;
     background-color:#369!important;
     border-radius: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   .navbar a {
@@ -34,9 +35,8 @@ section {
     text-align: center;
     color: white;
     padding: 10px 10px;
-    padding-bottom: 14px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    /* padding-top: 14px; */
+    /* padding-bottom: 14px; */
     font-size: 20px;
     text-decoration: none;
   }
@@ -51,7 +51,7 @@ section {
     color: white;
     text-decoration: none;
   }
-  .nav-link.active, .navbar-light .navbar-nav .nav-link:focus,  {
+  .nav-link.active, .navbar-light .navbar-nav .nav-link:focus {
     color: white;
     scroll-behavior: smooth;
   }
@@ -60,11 +60,20 @@ section {
   #about-me {height:-webkit-fill-available;color: #fff; background-color: white;}
   #resume {height:-webkit-fill-available;background-color: white }
 
-/* @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    padding-left: 300px;
+@media (max-width: 992px) {
+  .nav-item{
+    text-align: center;
+    padding: 10px 10px;
+    width: 100%;
   }
-} */
+  .navbar a:hover {
+    padding: 5px 122px;
+  }
+  .navbar-toggler {
+    font-size: x-large;
+  }
+
+}
 
 @media screen and (max-width: 601px) {
  #about-me{
